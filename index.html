@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunitha Nilayam</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="java.js">
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+
+<h2 class="logo">🏢 Sunitha Nilayam</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#rooms">Rooms</a></li>
+<li><a href="#amenities">Amenities</a></li>
+<li><a href="#feedback">Feedback</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- Hero Slider -->
+
+<section class="hero">
+
+<div class="slider">
+
+<img class="slide active" src="images/kitchen.jpg">
+<img class="slide" src="images/hall.jpg">
+<img class="slide" src="images/bathroom.jpg">
+<img class="slide" src="images/bedroom.jpg">
+<img class="slide" src="images/balcony.webp">
+
+</div>
+
+<div class="hero-text">
+
+<h1>SUNITHA NILAYAM</h1>
+
+<p>Luxury Apartments For Comfortable Living</p>
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section id="about">
+
+<h2>About Our Apartment</h2>
+
+<div class="about">
+
+<img src="images/apartment.jpg">
+
+<div>
+
+<p>
+
+Sunitha Nilayam offers spacious luxury apartments with modern architecture,
+beautiful interiors and premium furniture. Our apartment includes
+24/7 security, children's play area, swimming pool,
+gym, power backup, parking and landscaped gardens.
+Every flat is designed to provide maximum comfort and elegance.
+
+</p>
+
+<div class="stats">
+
+<div class="box">
+<h1>500+</h1>
+<p>Happy Families</p>
+</div>
+
+<div class="box">
+<h1>50+</h1>
+<p>Luxury Flats</p>
+</div>
+
+<div class="box">
+<h1>14+</h1>
+<p>Years Experience</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Rooms -->
+
+<section id="rooms">
+
+<h2>Apartment Rooms</h2>
+
+<div class="cards">
+
+<!-- Bedroom -->
+
+<div class="card">
+
+<img src="images/bedroom.jpg" alt="Bedroom">
+
+<h3>Master Bedroom</h3>
+
+<p>
+Luxury king-size bed, wardrobe, AC, study table,
+dressing mirror, LED lighting and attached bathroom.
+</p>
+
+</div>
+
+<!-- Living Hall -->
+
+<div class="card">
+
+<img src="images/hall.jpg" alt="Living Hall">
+
+<h3>Living Hall</h3>
+
+<p>
+Premium sofa, Smart TV, center table, dining table,
+decorative lighting and spacious seating.
+</p>
+
+</div>
+
+<!-- Kitchen -->
+
+<div class="card">
+
+<img src="images/kitchen.jpg" alt="Kitchen">
+
+<h3>Kitchen</h3>
+
+<p>
+Modern modular kitchen with chimney, granite platform,
+wooden cabinets and water purifier.
+</p>
+
+</div>
+
+<!-- Bathroom -->
+
+<div class="card">
+
+<img src="images/bathroom.jpg" alt="Bathroom">
+
+<h3>Bathroom</h3>
+
+<p>
+Western toilet, shower, geyser,
+wash basin and anti-skid tiles.
+</p>
+
+</div>
+
+<!-- Balcony -->
+
+<div class="card">
+
+<img src="images/balcony.webp" alt="Balcony">
+
+<h3>Balcony</h3>
+
+<p>
+Beautiful balcony with garden view,
+chairs, tea table and flower decorations.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Amenities -->
+
+<section id="amenities">
+
+<h2>Apartment Amenities</h2>
+
+<div class="buttons">
+
+<button onclick="changeImage('pool.jpg')">Swimming Pool</button>
+
+<button onclick="changeImage('gym.jpg')">Gym</button>
+
+<button onclick="changeImage('parking.jpg')">Parking</button>
+
+<button onclick="changeImage('garden.jpg')">Garden</button>
+
+<button onclick="changeImage('security.jpg')">Security</button>
+
+<button onclick="changeImage('play.jpg')">Children Park</button>
+
+</div>
+
+<div class="amenity-image">
+
+<img id="showImage" src="images/pool.jpg">
+
+</div>
+
+</section>
+
+<!-- Feedback -->
+
+<section id="feedback">
+
+<h2>Customer Reviews</h2>
+
+<div class="review">
+
+★★★★★ Rahul Sharma
+
+<p>
+
+Wonderful apartment with beautiful interiors and excellent maintenance.
+
+</p>
+
+</div>
+
+<div class="review">
+
+★★★★★ Priya Reddy
+
+<p>
+
+Very peaceful surroundings and spacious rooms.
+
+</p>
+
+</div>
+
+<div class="review">
+
+★★★★☆ Arjun Kumar
+
+<p>
+
+Best apartment with modern amenities and security.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea rows="5" placeholder="Write your Feedback"></textarea>
+
+<input type="submit" value="Submit">
+
+</form>
+<h3> submitted feedback</h3>
+<div id="result"></div>
+</section>
+
+<footer>
+
+<h2>Sunitha Nilayam</h2>
+
+<p>Email : sunithanilayam@gmail.com</p>
+
+<p>Phone : +91 9876543210</p>
+
+<p>Bangalore, Karnataka</p>
+
+<p>© 2026 Sunitha Nilayam. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+let slides=document.querySelectorAll(".slide");
+
+let index=0;
+
+setInterval(function(){
+
+slides[index].classList.remove("active");
+
+index=(index+1)%slides.length;
+
+slides[index].classList.add("active");
+
+},3000);
+
+function changeImage(img){
+
+document.getElementById("showImage").src="images/"+img;
+
+}
+
+</script>
+
+</body>
+</html>
