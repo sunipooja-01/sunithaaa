@@ -1,58 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Apartment Website</title>
+    <title>My First Web Page</title>
 </head>
 <body>
 
-    <h1 align="center">🏢 Sunitha Nilayam Apartment</h1>
+    <h1>Welcome to My Website</h1>
 
-    <hr>
+    <p>This is my first HTML page.</p>
 
-    <h2>Home</h2>
-    <p>Welcome to Sunitha Nilayam Apartment. We provide a safe, clean, and comfortable living environment.</p>
+    <h2>About Me</h2>
 
-    <h2>About</h2>
-    <p>Our apartment has spacious rooms, parking, 24/7 security, power backup, and water supply.</p>
+    <p>I am learning HTML.</p>
 
-    <h2>Facilities</h2>
-    <ul>
-        <li>24/7 Security</li>
-        <li>Parking</li>
-        <li>Power Backup</li>
-        <li>Lift</li>
-        <li>Garden</li>
-        <li>Children Play Area</li>
-    </ul>
-
-    <h2>Available Rooms</h2>
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>Room Type</th>
-            <th>Rent</th>
-        </tr>
-        <tr>
-            <td>1 BHK</td>
-            <td>₹8,000</td>
-        </tr>
-        <tr>
-            <td>2 BHK</td>
-            <td>₹12,000</td>
-        </tr>
-        <tr>
-            <td>3 BHK</td>
-            <td>₹16,000</td>
-        </tr>
-    </table>
-
-    <h2>Contact</h2>
-    <p><b>Phone:</b> +91 9876543210</p>
-    <p><b>Email:</b> apartment@example.com</p>
-    <p><b>Address:</b> Bangalore, Karnataka</p>
-
-    <hr>
-
-    <p align="center">© 2026 Sunitha Nilayam Apartment. All Rights Reserved.</p>
+    <a href="https://www.google.com">Visit Google</a>
 
 </body>
 </html>
