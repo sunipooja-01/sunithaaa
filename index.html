@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sunitha Nilayam</title>
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="java.js">
+<script src="java.js"></script>
 </head>
 
 <body>
@@ -265,19 +265,21 @@ Best apartment with modern amenities and security.
 
 <h2>Contact Us</h2>
 
-<form>
+<form id="feedbackForm" onsubmit="showFeedback(event)">
 
-<input type="text" placeholder="Your Name">
+<input type="text" id="name" placeholder="Your Name" required>
 
-<input type="email" placeholder="Your Email">
+<input type="email" id="email" placeholder="Your Email" required>
 
-<textarea rows="5" placeholder="Write your Feedback"></textarea>
+<textarea id="feedback" rows="5" placeholder="Write your Feedback" required></textarea>
 
 <input type="submit" value="Submit">
 
 </form>
-<h3> submitted feedback</h3>
+
+<h3>Customer Reviews</h3>
 <div id="result"></div>
+
 </section>
 
 <footer>
